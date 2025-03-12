@@ -1,12 +1,15 @@
 import express from "express";
-import { getCaregivers, getCaregiverById, createCaregiver, updateCaregiver, deleteCaregiver } from "../controllers/caregiverController.js";
+import caregiverController from "../controllers/caregiverController.js";
 
 const router = express.Router();
 
-router.get("/", getCaregivers);
-router.get("/:id", getCaregiverById);
-router.post("/", createCaregiver);
-router.put("/:id", updateCaregiver);
-router.delete("/:id", deleteCaregiver);
+router.get("/", caregiverController.getCaregivers);
+router.get("/:id", caregiverController.getCaregiverById);
+router.post("/", caregiverController.createCaregiver);
+router.put("/:id", caregiverController.updateCaregiver);
+router.delete("/:id", caregiverController.deleteCaregiver);
+
+// New route for caregiver application
+router.post("/apply", caregiverController.applyCaregiver);
 
 export default router;

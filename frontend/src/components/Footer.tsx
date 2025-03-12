@@ -6,10 +6,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold">Get In Touch!</h3>
             <p className="mt-2">
-              📞 <a href="tel:8594417977" className="underline">1.859.441.7977</a>
+              📞 <a href="tel:8594417977" className="underline">0943167599</a>
             </p>
             <p className="mt-2">🕒 Open 24 Hours</p>
-            <p className="mt-2">📍 654 Highland Ave, Suite 17, Fort Thomas, KY 41075</p>
+            <p className="mt-2">📍 41/76 Mai Dich, Ha Noi, Viet Nam</p>
             <p className="mt-2">✉️ <a href="mailto:admin@connectinghearts.net" className="underline">admin@connectinghearts.net</a></p>
           </div>
   
